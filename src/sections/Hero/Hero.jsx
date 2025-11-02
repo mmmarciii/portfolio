@@ -15,7 +15,6 @@ import Switch from '@mui/material/Switch';
 function Hero() {
     const { theme, toggleTheme } = useTheme();
 
-    const themeIcon = theme === 'light' ? sun : moon;
     const figmaIcon = theme === 'light' ? figmaLight : figmaDark;
     const githubIcon = theme === 'light' ? githubLight : githubDark;
     const linkedinIcon = theme === 'light' ? linkedinLight : linkedinDark;
@@ -27,12 +26,6 @@ function Hero() {
             src={profileImg} 
             alt="Profile picture of Marton Meszaros" 
         />
-        {/*<img 
-            className={styles.colorMode}
-            src={themeIcon} 
-            alt="Color mode icon"
-            onClick={toggleTheme}
-        />*/}
         <div className={styles.colorMode}>
              <Switch onChange={toggleTheme} defaultChecked />
         </div>
