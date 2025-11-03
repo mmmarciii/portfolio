@@ -1,4 +1,3 @@
-import React from 'react';
 import { useForm, ValidationError } from '@formspree/react';
 import styles from './ContactStyles.module.css';
 
@@ -12,10 +11,10 @@ function Contact() {
     return (
         <section id="contact" className={styles.container}>
             <h1 className='sectionTitle'>Contact</h1>
-            <form action='https://formspree.io/f/mvgvvngp' onSubmit={handleSubmit}>
+            <form method="post" action='https://formspree.io/f/mvgvvngp' onSubmit={handleSubmit}>
                 <div className='formGroup'>
                     <label htmlFor="name" hidden>Name</label>
-                    <input type="text" name="name" id="name" placeholder="Name" required/>
+                    <input id="name" type="text" name="name" placeholder="Name" autoComplete="on" required/>
                 </div>
                 <ValidationError 
                     prefix="Name" 
@@ -24,7 +23,7 @@ function Contact() {
                 />
                 <div className='formGroup'>
                     <label htmlFor="email" hidden>Email</label>
-                    <input type="text" name="email" id="email" placeholder="Email" required/>
+                    <input id="email" type="text" name="email" placeholder="Email" autoComplete="on" required/>
                 </div>
                 <ValidationError 
                     prefix="Email" 
@@ -40,7 +39,7 @@ function Contact() {
                     field="message"
                     errors={state.errors}
                 />
-                <input className="hover btn" type="submit" value="Submit" disabled={state.submitting} />
+                <input className="hover btn" type="submit" id="submit" name="submit" value="Submit" disabled={state.submitting} />
             </form>
         </section>
     )
