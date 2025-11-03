@@ -50,4 +50,7 @@
   .navbarCenter ul li{
       font-size: 16px;
   }
+  .navbarCenter ul li:first-child{ 
+    display: none;
+  }
 }
