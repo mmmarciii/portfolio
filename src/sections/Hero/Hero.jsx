@@ -1,7 +1,5 @@
 import styles from  './HeroStyles.module.css';
 import profileImg from '../../assets/martonmeszaros.jpg';
-import sun from '../../assets/sun.svg'
-import moon from '../../assets/moon.svg'
 import figmaLight from '../../assets/figma-light.svg';
 import figmaDark from '../../assets/figma-dark.svg';
 import githubLight from '../../assets/github-light.svg';
@@ -10,10 +8,10 @@ import linkedinLight from '../../assets/linkedin-light.svg';
 import linkedinDark from '../../assets/linkedin-dark.svg';
 import CV from'../../assets/Resume_Marton_Meszaros_EN.pdf';
 import { useTheme } from '../../Common/ThemeContext';
-import Switch from '@mui/material/Switch';
+
 
 function Hero() {
-    const { theme, toggleTheme } = useTheme();
+    const { theme } = useTheme();
 
     const figmaIcon = theme === 'light' ? figmaLight : figmaDark;
     const githubIcon = theme === 'light' ? githubLight : githubDark;
@@ -26,10 +24,7 @@ function Hero() {
             src={profileImg} 
             alt="Profile picture of Marton Meszaros" 
         />
-        <div className={styles.colorMode}>
-             <Switch onChange={toggleTheme} defaultChecked />
-        </div>
-       
+     
     </div>
     <div className={styles.info}>
         <h1>
