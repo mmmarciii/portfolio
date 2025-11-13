@@ -6,7 +6,7 @@ import githubLight from '../../assets/github-light.svg';
 import githubDark from '../../assets/github-dark.svg';
 import linkedinLight from '../../assets/linkedin-light.svg';
 import linkedinDark from '../../assets/linkedin-dark.svg';
-import CV from'../../assets/Resume_Marton_Meszaros_EN.pdf';
+import CV from'../../assets/Marton_Meszaros_CV_EN.pdf';
 import { useTheme } from '../../Common/ThemeContext';
 
 
