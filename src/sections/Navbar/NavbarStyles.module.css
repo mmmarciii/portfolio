@@ -70,9 +70,7 @@
   }
   .hamburgerIcon{
     display: flex;
-    position: absolute;
-    top: 16px;
-    right: 16px;
+    justify-content: end;
     padding: 16px;
   }
   .navbarCenter{
