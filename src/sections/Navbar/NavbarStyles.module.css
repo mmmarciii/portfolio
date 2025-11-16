@@ -1,5 +1,5 @@
 .container {
-    color: #222;
+    color: var(--text-color);
     z-index: 999;
     position: sticky;
     top: 0;
@@ -13,12 +13,12 @@
     height: 100%;
 }
 
-.navbarCenter ul{
+.navMenu ul{
     display: flex;
     align-items: center;
 }
 
-.navbarCenter ul li {
+.navMenu ul li, .hamburgerMenu ul li {
   list-style-type: none;
   font-family: 'Rubik', sans-serif;
   font-size: 20px;
@@ -28,29 +28,58 @@
   border-bottom: 4px solid rgb(255, 255, 255, 0.0);
 }
 
-.navbarCenter ul li:last-child:hover {
+.navMenu ul li:last-child:hover {
   border-bottom: 4px solid rgb(255, 255, 255, 0.0);
 }
 
-.navbarCenter ul li:hover {
+.navMenu ul li:hover, .hamburgerMenu ul li:hover {
   border-bottom: 4px solid var(--btn-color);
   color: var(--btn-color);
 }
 
-.navbarCenter ul li:active {
+.navMenu ul li:active, .hamburgerMenu ul li:active {
   color: var(--btn-color);
   border-bottom: 4px solid var(--btn-color);
 }
-.container .navbarCenter ul li{
+.container .navMenu ul li{
   padding: 10px;
   margin: 0 10px;
 }
+.hamburgerIcon{
+  display: none;
+}
+.hamburgerMenu{
+  display: none;
+  flex-direction: row;
+  justify-content: center;
+  text-align: center;
+}
+.hamburgerMenu ul{
+  padding: 0;
+}
+.hamburgerMenu ul li {
+  padding: 16px;
+}
 
 @media ( max-width: 800px) {
-  .navbarCenter ul li{
-      font-size: 16px;
-  }
-  .navbarCenter ul li:first-child{ 
+  .navMenu ul{
     display: none;
+  }
+  .container{
+    backdrop-filter: blur(80px);
+  }
+  .hamburgerIcon{
+    display: flex;
+    position: absolute;
+    top: 16px;
+    right: 16px;
+    padding: 16px;
+  }
+  .navbarCenter{
+    display: block;
+    justify-content: center;
+  }
+  .hamburgerMenu{
+    display: flex;
   }
 }
