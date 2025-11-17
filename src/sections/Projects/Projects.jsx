@@ -12,6 +12,7 @@ import checkout from '../../assets/checkout.png';
 import chart from '../../assets/glassmorphm.png';
 import story from '../../assets/storydesign.png';
 import userprofile from '../../assets/userprofile.png';
+import weatherapp from '../../assets/weatherapp.png';
 import React, { useState } from 'react';
 
 
@@ -32,6 +33,7 @@ function Projects() {
     { id: 9, src: chart , link: "https://www.figma.com/design/DU7Mptm6bo4qBbOn9okxTW/Glassmorphm-chart-design?node-id=0-1&t=FMBnOPTWa4dRb3IO-1", h3: 'Glassmorphm', category: 'Figma',p: 'A chart design' },
     { id: 10, src: story , link: "https://www.figma.com/design/XSY7J3jtVuetXFcXdvWFI1/Design--1?node-id=0-1&t=wJ1i72UUTHCHlbvw-1", h3: 'Design', category: 'Figma',p: 'A website design' },
     { id: 11, src: userprofile , link: "https://www.figma.com/design/b9L7xXAzsTO5Osdv4l0iny/User-Profile?node-id=0-1&t=0SxnMIBbdVzpWDGa-1", h3: 'User Profile', category: 'Figma',p: 'A user profile design' },
+    { id: 12, src: weatherapp , link: "https://mmyweatherapp.netlify.app/", h3: 'User Profile', category: 'React',p: 'A weather application' },
   ];
 
   const [projects] = useState(initialProjects);
