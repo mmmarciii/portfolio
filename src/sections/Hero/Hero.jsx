@@ -43,7 +43,7 @@ function Hero() {
                 <img src={figmaIcon} alt="Figma Icon" />
             </a>
         </span>
-        <p className={styles.description}>Hey there! I'm a Junior Frontend Developer ready to build beautiful web experiences.</p>
+        <p className={styles.description}>Hey there! I'm a Junior Webdeveloper ready to build beautiful and interesting web experiences.</p>
         <a href={CV} download>
             <button className="hover">
                 Resume
