@@ -30,7 +30,7 @@ function Projects() {
   const projectsToDisplay = filterCategory ? projects.filter(project => project.category === filterCategory) : projects; 
 
   return (
-    <section id="projects" className={styles.container}>
+    <section id="certificates" className={styles.container}>
         <h1 className='sectionTitle'>Projects</h1>
         <div className={styles.filterContainer}>
           <button type="button" className={styles.hover} onClick={() => handleFilter(null)}>

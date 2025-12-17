@@ -17,6 +17,9 @@ function NavLinks() {
             <Link to="skills" smooth={true} offset={-120} duration={640}>Skills</Link>
         </li>
         <li>
+            <Link to="certificates" smooth={true} offset={-120} duration={640}>Certificates</Link>
+        </li>
+        <li>
             <Link to="contact" smooth={true} offset={-120} duration={640}>Contact</Link>
         </li>
         <li>
