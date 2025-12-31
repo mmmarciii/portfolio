@@ -35,7 +35,7 @@ function Projects() {
     { id: 10, src: story , link: "https://www.figma.com/design/XSY7J3jtVuetXFcXdvWFI1/Design--1?node-id=0-1&t=wJ1i72UUTHCHlbvw-1", h3: 'Design', category: 'Figma',p: 'A website design' },
     { id: 11, src: userprofile , link: "https://www.figma.com/design/b9L7xXAzsTO5Osdv4l0iny/User-Profile?node-id=0-1&t=0SxnMIBbdVzpWDGa-1", h3: 'User Profile', category: 'Figma',p: 'A user profile design' },
     { id: 12, src: weatherapp , link: "https://mmyweatherapp.netlify.app/", h3: 'A weather app', category: 'React',p: 'A weather application' },
-    { id: 13, src: shiftslogger , link: "https://shiftslogger.netlify.app/", h3: 'Shifts Logger', category: 'Angular',p: 'A .NET API project' },
+    { id: 13, src: shiftslogger , link: "https://shiftslogger.netlify.app/", h3: 'Shifts Logger', category: ['Angular', 'dotNET'],p: 'A .NET API project' },
   ];
 
   const [projects] = useState(initialProjects);
@@ -45,7 +45,9 @@ function Projects() {
     setFilterCategory(category)
   };
 
-  const projectsToDisplay = filterCategory ? projects.filter(project => project.category === filterCategory) : projects; 
+  const projectsToDisplay = filterCategory 
+        ? projects.filter(project => project.category.includes(filterCategory))
+        : projects;
 
   return (
     <section id="projects" className={styles.container}>
@@ -68,6 +70,9 @@ function Projects() {
           </button>
           <button type="button" className={styles.hover} onClick={() => handleFilter('Angular')}>
             Angular
+          </button>
+          <button type="button" className={styles.hover} onClick={() => handleFilter('dotNET')}>
+            .NET
           </button>
           <button type="button" className={styles.hover} onClick={() => handleFilter('Bootstrap')}>
             Bootstrap
