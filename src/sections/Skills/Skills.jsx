@@ -26,6 +26,7 @@ function Skills() {
             <SkillList src={checkMarkIcon} skill="Bootstrap" />
             <SkillList src={checkMarkIcon} skill=".NET" />
             <SkillList src={checkMarkIcon} skill="REACT" />
+            <SkillList src={checkMarkIcon} skill="ANGULAR" />
             <SkillList src={checkMarkIcon} skill="Opencart" />
             <SkillList src={checkMarkIcon} skill="Wordpress" />
             <SkillList src={checkMarkIcon} skill="Django" />
@@ -33,6 +34,7 @@ function Skills() {
         <hr />
         <div className={styles.skillsList}>
             <SkillList src={checkMarkIcon} skill="Visual Studio" />
+            <SkillList src={checkMarkIcon} skill="AZURE" />
             <SkillList src={checkMarkIcon} skill="Git" />
             <SkillList src={checkMarkIcon} skill="Figma" />
             <SkillList src={checkMarkIcon} skill="Photoshop" />
