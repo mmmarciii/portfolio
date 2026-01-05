@@ -22,7 +22,7 @@ import React, { useState } from 'react';
 
 function Projects() {
   const initialProjects = [
-    { id: 0, src: crazydog , link: "https://dev.crazydogcustom.com/", h3: 'Crazy Dog Custom', category: 'Bootstrap',p: 'Hand painted shoes' },
+    { id: 0, src: crazydog , link: "https://dev.crazydogcustom.com/", h3: 'Crazy Dog Custom', category: ['Bootstrap', 'Angular'], p: 'Hand painted shoes' },
     { id: 1, src: benettpapir , link: "https://teszt.benettpapir.hu/", h3: 'Benettpapir', category: 'Opencart',p: 'Paper stationery store' },
     { id: 2, src: keszibike , link: "https://keszibike.hu/", h3: 'Keszibike', category: 'Opencart',p: 'Bike service' },
     { id: 3, src: keszisi , link: "https://keszisi.hu/", h3: 'Keszisi', category: 'Wordpress',p: 'Ski rental and service' },
