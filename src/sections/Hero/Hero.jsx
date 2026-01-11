@@ -1,7 +1,5 @@
 import styles from  './HeroStyles.module.css';
 import profileImg from '../../assets/martonmeszaros.jpg';
-import figmaLight from '../../assets/figma-light.svg';
-import figmaDark from '../../assets/figma-dark.svg';
 import githubLight from '../../assets/github-light.svg';
 import githubDark from '../../assets/github-dark.svg';
 import linkedinLight from '../../assets/linkedin-light.svg';
@@ -13,7 +11,6 @@ import { useTheme } from '../../Common/ThemeContext';
 function Hero() {
     const { theme } = useTheme();
 
-    const figmaIcon = theme === 'light' ? figmaLight : figmaDark;
     const githubIcon = theme === 'light' ? githubLight : githubDark;
     const linkedinIcon = theme === 'light' ? linkedinLight : linkedinDark;
   return (
@@ -31,16 +28,13 @@ function Hero() {
             Marton <br/>
             Meszaros
         </h1>
-        <h2>Junior Forntend Developer</h2>
+        <h2>Junior Webdeveloper</h2>
         <span>
             <a href="https://github.com/mmmarciii/" target="_blank">
                 <img src={githubIcon} alt="GitHub Icon" />
             </a>
             <a href="https://www.linkedin.com/in/meszmarc/" target="_blank">
                 <img src={linkedinIcon} alt="linkedIn Icon" />
-            </a>
-            <a href="#" target="_blank">
-                <img src={figmaIcon} alt="Figma Icon" />
             </a>
         </span>
         <p className={styles.description}>Hey there! I'm a Junior Webdeveloper ready to build beautiful and interesting web experiences.</p>
