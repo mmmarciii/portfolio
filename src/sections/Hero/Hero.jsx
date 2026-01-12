@@ -6,6 +6,7 @@ import linkedinLight from '../../assets/linkedin-light.svg';
 import linkedinDark from '../../assets/linkedin-dark.svg';
 import CV from'../../assets/Marton_Meszaros_CV_EN.pdf';
 import { useTheme } from '../../Common/ThemeContext';
+import HighFiveButton from '../../Common/HighFiveButton'
 
 
 function Hero() {
@@ -38,12 +39,7 @@ function Hero() {
             </a>
         </span>
         <p className={styles.description}>Hey there! I'm a Junior Webdeveloper ready to build beautiful and interesting web experiences.</p>
-        <a href={CV} download>
-            <button className="hover">
-                Resume
-            </button>
-        </a>
-
+        <HighFiveButton/>
     </div>
   </section>
   );
